@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuController">
+   <children>
+      <ScrollPane prefHeight="500.0" prefWidth="200.0">
+        <content>
+          <AnchorPane prefHeight="800.0" prefWidth="187.0" style="-fx-background-color: #5F9EA0;">
+               <children>
+                  <Pane prefHeight="850.0" prefWidth="187.0">
+                     <children>
+                        <ImageView fx:id="iView" accessibleText="50" fitHeight="115.0" fitWidth="128.0" layoutX="36.0" layoutY="14.0" onMouseClicked="#ramenMenu" onMousePressed="#ramenMenu" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/ramen.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="rollButton" fitHeight="124.0" fitWidth="128.0" layoutX="30.0" layoutY="176.0" onMousePressed="#rollsMenu" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/sushi.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="salad" fitHeight="122.0" fitWidth="125.0" layoutX="22.0" layoutY="336.0" onMousePressed="#saladMenu" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/salad.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="143.0" layoutX="28.0" layoutY="501.0" onMousePressed="#drinkMenu" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/sake.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="123.0" fitWidth="129.0" layoutX="30.0" layoutY="688.0" onMousePressed="#dessertMenu" pickOnBounds="true">
+                           <image>
+                              <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/dessert.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="66.0" layoutY="129.0" text="Ramen" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="304.0" text="Rolls and Sushi" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="458.0" text="Salads" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="51.0" layoutY="645.0" text="Drinks" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="51.0" layoutY="820.0" text="Desserts" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="400.0" layoutY="428.0" mnemonicParsing="false" onAction="#onBackToLogin" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #000000;" text="BACK" textFill="#f5f3f3" />
+      <Pane fx:id="paneMain" layoutX="200.0" prefHeight="400.0" prefWidth="541.0" style="-fx-background-color: #5F9EA0;">
+         <children>
+            <ScrollPane prefHeight="400.0" prefWidth="540.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="550.0" prefWidth="540.0" style="-fx-background-color: #5F9EA0;">
+                     <children>
+                        <Pane fx:id="paneMenu" layoutX="-2.0" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <AnchorPane layoutX="35.0" layoutY="327.0">
+                                 <children>
+                                    <Label layoutX="-10.0" text="Ramen with vegetables" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <ImageView fx:id="img2" accessibleHelp="Ramen with chicken" accessibleText="250" fitHeight="150.0" fitWidth="200.0" layoutX="294.0" layoutY="22.0" onMouseClicked="#ramenChickenPressed" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/second.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="img3" accessibleHelp="Ramen with vegetables" accessibleText="180" fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="194.0" onMouseClicked="#vegetablesRamen" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/third.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="img4" accessibleHelp="Ramen with fried fish" accessibleText="200" fitHeight="150.0" fitWidth="200.0" layoutX="294.0" layoutY="194.0" onMouseClicked="#friedRamen" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/fourth.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="img5" accessibleHelp="Milky ramen" accessibleText="150" fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="363.0" onMouseClicked="#milkyRamen" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/fifth.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="img6" accessibleHelp="Ramen with shrimp" accessibleText="230" fitHeight="150.0" fitWidth="200.0" layoutX="294.0" layoutY="363.0" onMouseClicked="#shrimpRamen" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/sixth.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="58.0" layoutY="155.0" text="Classic ramen" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="307.0" layoutY="155.0" text="Ramen with chicken " textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="303.0" layoutY="327.0" text="Ramen with fried fish" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="294.0" layoutY="513.0" text="Ramen with shrimp" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="55.0" layoutY="513.0" text="Milky ramen" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="img1" accessibleHelp="Classic ramen" accessibleText="280" fitHeight="150.0" fitWidth="200.0" layoutX="22.0" layoutY="22.0" onMouseClicked="#ramenPressed" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/IdeaProjects/MenuApp/src/sample/first.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="rollPane" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <ImageView fx:id="roll1" accessibleHelp="Philadelphia" accessibleText="330" fitHeight="158.0" fitWidth="200.0" layoutX="37.0" layoutY="30.0" onMouseClicked="#philadelphiaClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/philadelphia.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="roll2" accessibleHelp="Canada" accessibleText="290" fitHeight="158.0" fitWidth="200.0" layoutX="294.0" layoutY="30.0" onMouseClicked="#canadaClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/canada.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="roll3" accessibleHelp="Fried rolls" accessibleText="350" fitHeight="158.0" fitWidth="200.0" layoutX="37.0" layoutY="196.0" onMouseClicked="#friedRollsClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/fried.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="roll4" accessibleHelp="Sake maki" accessibleText="190" fitHeight="158.0" fitWidth="200.0" layoutX="294.0" layoutY="196.0" onMouseClicked="#sakeMakiClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/sakemaki.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="roll5" accessibleHelp="Sushi nigiri" accessibleText="240" fitHeight="149.0" fitWidth="218.0" layoutX="37.0" layoutY="371.0" onMouseClicked="#nigiriSushiClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/nigiri.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="roll6" accessibleHelp="Sushi gunkan" accessibleText="210" fitHeight="158.0" fitWidth="200.0" layoutX="301.0" layoutY="371.0" onMouseClicked="#gunkanSushiClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/gunkan.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="94.0" layoutY="516.0" text="Sushi nigiri" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="349.0" layoutY="516.0" text="Sushi gunkan" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="99.0" layoutY="329.0" text="Fried rolls" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="347.0" layoutY="329.0" text="Sake maki" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="79.0" layoutY="163.0" text="Philadelphia" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="359.0" layoutY="163.0" text="Canada" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="saladPane" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <ImageView fx:id="salad1" accessibleHelp="Seaweed" accessibleText="120" fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="36.0" onMouseClicked="#seaweedClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/seaweed.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="salad2" accessibleHelp="Kinpira salad" accessibleText="200" fitHeight="150.0" fitWidth="200.0" layoutX="290.0" layoutY="36.0" onMouseClicked="#kinpiraClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/kinpira.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="salad3" accessibleHelp="Cucumber sunomono" accessibleText="170" fitHeight="150.0" fitWidth="200.0" layoutX="55.0" layoutY="234.0" onMouseClicked="#cucumberClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/cucumbersunomono.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="salad4" accessibleHelp="Classic salad" accessibleText="240" fitHeight="150.0" fitWidth="200.0" layoutX="297.0" layoutY="234.0" onMouseClicked="#classicClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/classicsalad.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="81.0" layoutY="169.0" text="Seaweed" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="348.0" layoutY="169.0" text="Kinpira" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="384.0" text="Cucumber sunomono" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="325.0" layoutY="367.0" text="Classic salad" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="drinkPane" layoutX="-2.0" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <ImageView fx:id="drink1" accessibleHelp="Water" accessibleText="45" fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="36.0" onMouseClicked="#waterClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/water.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="drink2" accessibleHelp="Sake" accessibleText="150" fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="236.0" onMouseClicked="#teaClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/sake.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="drink3" accessibleHelp="Tea" accessibleText="80" fitHeight="150.0" fitWidth="200.0" layoutX="279.0" layoutY="36.0" onMouseClicked="#sakeClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/tea.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="75.0" layoutY="186.0" text="Water" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="353.0" layoutY="186.0" text="Tea" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="82.0" layoutY="386.0" text="Sake" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="dessertPane" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <ImageView fx:id="dessert1" accessibleHelp="Taiyaki Fish-Shaped Pastry" accessibleText="120" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="35.0" onMouseClicked="#pastryClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/fishi.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="dessert2" accessibleHelp="Cheesecake" accessibleText="90" fitHeight="150.0" fitWidth="200.0" layoutX="296.0" layoutY="35.0" onMouseClicked="#cakeClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/cheesecake.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="dessert3" accessibleHelp="Mochi" accessibleText="110" fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="229.0" onMouseClicked="#mociClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="file:/C:/Users/Nazik/Downloads/mochi.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="23.0" layoutY="185.0" text="Taiyaki Fish-Shaped Pastry" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="346.0" layoutY="185.0" text="Cheesecake" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="108.0" layoutY="362.0" text="Mochi" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="orderPane" prefHeight="550.0" prefWidth="540.0" visible="false">
+                           <children>
+                              <TextArea fx:id="txtArea" layoutX="39.0" layoutY="64.0" prefHeight="486.0" prefWidth="450.0" />
+                              <Button layoutX="412.0" layoutY="32.0" mnemonicParsing="false" onAction="#minusClick" prefHeight="27.0" prefWidth="36.0" text="-" />
+                              <Label layoutX="203.0" layoutY="14.0" text="Your Order" textFill="#ffffff">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Button layoutX="453.0" layoutY="32.0" mnemonicParsing="false" onAction="#plusClick" prefHeight="27.0" prefWidth="36.0" text="+" />
+                              <TextField fx:id="inField" layoutX="351.0" layoutY="32.0" prefHeight="27.0" prefWidth="50.0" promptText="index" />
+                              <Button layoutX="39.0" layoutY="32.0" mnemonicParsing="false" onAction="#amountCalculate" prefHeight="27.0" prefWidth="133.0" text="Сalculate the amount" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children></Pane>
+      <Button layoutX="261.0" layoutY="428.0" mnemonicParsing="false" onMouseClicked="#onMyOrder" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #000000;" text="My order" textFill="#fdfbfb" />
+      <Button layoutX="540.0" layoutY="428.0" mnemonicParsing="false" onAction="#makeOrder" onMouseClicked="#onMyOrder" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #000000;" text="Make order" textFill="#fdfbfb" />
+   </children>
+</Pane>

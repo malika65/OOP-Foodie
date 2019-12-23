@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="740.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegiterController">
+   <children>
+      <Label layoutX="47.0" layoutY="33.0" text="Registration form :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="179.0" layoutY="94.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtSurname" layoutX="179.0" layoutY="147.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtEmail" layoutX="179.0" layoutY="207.0" prefHeight="35.0" prefWidth="230.0" />
+      <TextField fx:id="txtPassword" layoutX="179.0" layoutY="269.0" prefHeight="35.0" prefWidth="230.0" />
+      <Label layoutX="70.0" layoutY="102.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="155.0" text="Surname">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="215.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="277.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutX="440.0" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #000;" />
+      <Button fx:id="registerBtn" layoutX="219.0" layoutY="344.0" mnemonicParsing="false" onAction="#onRegistration" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 5px; -fx-background-color: #5F9EA0;" text="Register" />
+      <Button fx:id="backBtn" layoutX="39.0" layoutY="344.0" mnemonicParsing="false" onAction="#onBack" prefHeight="40.0" prefWidth="150.0" style="-fx-background-radius: 5px; -fx-background-color: #5F9EA0;" text="BACK" />
+   </children>
+</Pane>
