@@ -4,10 +4,10 @@ This project is based on the popular fast food chain McDonald’s. In their eate
 
 
 Screenshots:
-![Login page](https://i.imgur.com/VFGfu52.png)
-![Registration page](https://i.imgur.com/XfCB6LT.png)
-![Main page](https://i.imgur.com/6qC35OV.jpg)
-![Menu page](https://i.imgur.com/LM0OE6D.jpg)
-![Order page](https://i.imgur.com/dnTKr9m.jpg)
+![Login page](https://i.imgur.com/m8A9uda.png)
+![Registration page](https://i.imgur.com/mYFbBmH.png)
+![Main page](https://i.imgur.com/GcxzDNT.png)
+![Order page](https://i.imgur.com/AFSlial.png)
+![Make order page](https://i.imgur.com/punbn5f.png)
 
 
